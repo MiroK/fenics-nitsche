@@ -1,0 +1,8 @@
+*.swp
+*.pyc
+*~
+*.h5
+*.xdmf
+*.xml
+*.msh
+*.png
