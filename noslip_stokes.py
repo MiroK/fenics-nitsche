@@ -78,7 +78,7 @@ def nitsche_stokes(reynolds_number, dirichlet_wall=False):
     gamma_2 = Constant(10)
 
     a = Re**-1*inner(grad(u), grad(v))*dx -\
-        inner(p, div(v))*dx - inner(q, div(u))*dx -\
+        inner(p, div(v))*dx + inner(q, div(u))*dx -\
         Re**-1*inner(dot(grad(u), n), v)*ds(pressure_bdry)\
         - Re**-1*inner(dot(grad(u), n), v)*ds(cylinder_bdry)\
         + inner(p*n, v)*ds(cylinder_bdry)
