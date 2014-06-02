@@ -6,3 +6,4 @@
 *.xml
 *.msh
 *.png
+.ipynb_checkpoints/
