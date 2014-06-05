@@ -1,0 +1,8 @@
+This repository tries to compare `classical` FEM formulations of different
+physical problems with Nitsche and Babuska penalty formulations. The term
+`classical` refers to a formulation where Dirichlet boundary conditions are
+enforced via trial spaces. With Nitsche and Babuska methods, these conditions
+enter weak forms weakly.
+
+With all the problems, articles that were used either as a template or
+inspiration for the formulations are listed. 
