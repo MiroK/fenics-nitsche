@@ -156,7 +156,7 @@ def nitsche(N):
 
     # Define Nitsche variables
     gamma = Constant(4)
-    h_E = mesh.ufl_cell().max_facet_edge_length
+    h_E = Circumradius(mesh)
     n = FacetNormal(mesh)
 
     # Create boundary functions
